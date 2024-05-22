@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -30,6 +31,11 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.ItemIdGeneratorTest.executor": "Run",
+    "JUnit.ShoppingItemServiceImplTest.create.executor": "Run",
+    "JUnit.ShoppingItemServiceImplTest.createAndRead.executor": "Run",
+    "JUnit.ShoppingItemServiceImplTest.createAndReadException.executor": "Run",
+    "JUnit.ShoppingItemServiceImplTest.delete.executor": "Run",
+    "JUnit.ShoppingItemServiceImplTest.update.executor": "Run",
     "JUnit.ShoppingItemTest.executor": "Run",
     "JUnit.ShoppingItemTest.testEquals.executor": "Run",
     "JUnit.ShoppingItemTest.testHashCode.executor": "Run",
@@ -55,7 +61,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShoppingItemTest.testHashCode">
+  <component name="RunManager" selected="JUnit.ShoppingItemServiceImplTest.delete">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="sber-crud" />
@@ -69,7 +75,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemIdGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingItemServiceImplTest.createAndRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sber-crud" />
       <extension name="coverage">
         <pattern>
@@ -78,44 +84,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ItemIdGeneratorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShoppingItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sber-crud" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ShoppingItemTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShoppingItemTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sber-crud" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ShoppingItemTest" />
-      <option name="METHOD_NAME" value="testEquals" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ShoppingItemServiceImplTest" />
+      <option name="METHOD_NAME" value="createAndRead" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingItemTest.testHashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingItemServiceImplTest.createAndReadException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sber-crud" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +100,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ShoppingItemTest" />
-      <option name="METHOD_NAME" value="testHashCode" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ShoppingItemServiceImplTest" />
+      <option name="METHOD_NAME" value="createAndReadException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingItemServiceImplTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sber-crud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ShoppingItemServiceImplTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingItemServiceImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sber-crud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ShoppingItemServiceImplTest" />
+      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShoppingItemTest.testHashCode" />
-        <item itemvalue="JUnit.ShoppingItemTest.testEquals" />
-        <item itemvalue="JUnit.ItemIdGeneratorTest" />
+        <item itemvalue="JUnit.ShoppingItemServiceImplTest.delete" />
+        <item itemvalue="JUnit.ShoppingItemServiceImplTest.update" />
+        <item itemvalue="JUnit.ShoppingItemServiceImplTest.createAndReadException" />
+        <item itemvalue="JUnit.ShoppingItemServiceImplTest.createAndRead" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ShoppingItemTest" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +166,8 @@
       <updated>1716307885247</updated>
       <workItem from="1716307886363" duration="1543000" />
       <workItem from="1716309552087" duration="32000" />
-      <workItem from="1716309617254" duration="1406000" />
+      <workItem from="1716309617254" duration="1685000" />
+      <workItem from="1716367074360" duration="3673000" />
     </task>
     <servers />
   </component>

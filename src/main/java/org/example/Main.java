@@ -3,9 +3,10 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        ShoppingItem item = new ShoppingItem("Milk", 1.99, 2);
-        System.out.println(item);
-        ShoppingItem item2 = new ShoppingItem("Salt", 0.15, 1);
-        System.out.println(item2);
+        ShoppingItemServiceImpl service = new ShoppingItemServiceImpl();
+        service.create(new ShoppingItem("Milk", 1.99, 2));
+        service.create(new ShoppingItem("Eggs", 2.99, 3));
+
+        System.out.println(service.size());
     }
 }

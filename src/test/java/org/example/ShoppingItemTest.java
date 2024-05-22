@@ -1,6 +1,7 @@
 package org.example;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,37 +13,37 @@ class ShoppingItemTest {
     }
 
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getId() {
         ShoppingItem item = new ShoppingItem("Milk", 1.99, 2);
         assertEquals(1, item.getId());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getName() {
         ShoppingItem item = new ShoppingItem("Milk", 1.99, 2);
         assertEquals("Milk", item.getName());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getPrice() {
         ShoppingItem item = new ShoppingItem("Milk", 1.99, 2);
         assertEquals(1.99, item.getPrice());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getQuantity() {
         ShoppingItem item = new ShoppingItem("Milk", 1.99, 2);
         assertEquals(2, item.getQuantity());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testToString() {
         ShoppingItem item = new ShoppingItem("Milk", 1.99, 2);
         assertEquals("ShoppingItem{id=1, name='Milk', price=1.99, quantity=2}", item.toString());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testEquals() {
         ShoppingItem item = new ShoppingItem("Milk", 1.99, 2);
         assertNotEquals(item, new ShoppingItem("Milk", 1.99, 1));
@@ -50,7 +51,7 @@ class ShoppingItemTest {
         assertNotEquals(item, new Object());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testHashCode() {
         ShoppingItem item = new ShoppingItem("Milk", 1.99, 2);
         assertNotEquals(item.hashCode(), new ShoppingItem("Milk", 1.99, 2).hashCode());

@@ -4,7 +4,7 @@ public class ShoppingItem {
     private final long id;
     private final String name;
     private final double price;
-    private final int quantity;
+    private int quantity;
 
     public ShoppingItem(String name, double price, int quantity) {
         this.id = ItemIdGenerator.getInstance().getNextId();
@@ -50,5 +50,17 @@ public class ShoppingItem {
     @Override
     public int hashCode() {
         return Long.hashCode(id);
+    }
+
+    public void incrementQuantity() {
+        quantity++;
+    }
+
+    public void decrementQuantity() {
+        if(quantity > 1) {
+            quantity--;
+        } else {
+            quantity = 1;
+        }
     }
 }

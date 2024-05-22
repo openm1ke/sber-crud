@@ -1,12 +1,17 @@
 package org.example;
 
+import org.slf4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
+import org.slf4j.LoggerFactory;
 
 /**
  * Реализация интерфейса ShoppingItemService
  */
 public class ShoppingItemServiceImpl implements ShoppingItemService {
+
+    private static final Logger logger = LoggerFactory.getLogger(ShoppingItemServiceImpl.class);
 
     /**
      * Список элементов
@@ -20,6 +25,7 @@ public class ShoppingItemServiceImpl implements ShoppingItemService {
     @Override
     public void create(ShoppingItem item) {
         items.add(item);
+        logger.info("Item created: {}", item);
     }
 
     /**
@@ -28,6 +34,7 @@ public class ShoppingItemServiceImpl implements ShoppingItemService {
      */
     @Override
     public ShoppingItem read(long id) throws ItemNotFoundException {
+        logger.info("Item read: {}", id);
         for(ShoppingItem item : items) {
             if(item.getId() == id) {
                 return item;
@@ -42,6 +49,7 @@ public class ShoppingItemServiceImpl implements ShoppingItemService {
      */
     @Override
     public void update(ShoppingItem item) throws ItemNotFoundException {
+        logger.info("Item updated: {}", item);
         for(int i = 0; i < items.size(); i++) {
             if(items.get(i).getId() == item.getId()) {
                 items.set(i, item);
@@ -57,6 +65,7 @@ public class ShoppingItemServiceImpl implements ShoppingItemService {
      */
     @Override
     public void delete(long id) {
+        logger.info("Item deleted: {}", id);
         for(int i = 0; i < items.size(); i++) {
             if(items.get(i).getId() == id) {
                 items.remove(i);
@@ -71,6 +80,7 @@ public class ShoppingItemServiceImpl implements ShoppingItemService {
      * @return int
      */
     public int size() {
+        logger.info("Items list size: {}", items.size());
         return items.size();
     }
 
@@ -79,6 +89,7 @@ public class ShoppingItemServiceImpl implements ShoppingItemService {
      * @return List<ShoppingItem>
      */
     public List<ShoppingItem> list() {
+        logger.info("Items list: {}", items);
         return items;
     }
 }

@@ -1,14 +1,18 @@
 package org.example;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.List;
 import java.util.Scanner;
 
 public class ShoppingApp {
     private static final ShoppingItemService service = new ShoppingItemServiceImpl();
     private static final Scanner scanner = new Scanner(System.in);
-
+    private static final Logger logger = LoggerFactory.getLogger(ShoppingApp.class);
     public static void main(String[] args) {
         boolean running = true;
+        logger.info("Start application");
         while (running) {
             printMenu();
             int choice = scanner.nextInt();
@@ -39,6 +43,7 @@ public class ShoppingApp {
     }
 
     public static void printMenu() {
+        logger.info("Print menu");
         System.out.println("1. Create");
         System.out.println("2. Read");
         System.out.println("3. Update");
@@ -49,6 +54,7 @@ public class ShoppingApp {
     }
 
     public static void listItems() {
+        logger.info("List items");
         List<ShoppingItem> items = service.list();
         if(items.isEmpty()) {
             System.out.println("Items list empty");
@@ -60,6 +66,7 @@ public class ShoppingApp {
     }
 
     public static void create() {
+        logger.info("Create item");
         System.out.print("Enter name: ");
         String name = scanner.nextLine();
         System.out.print("Enter price: ");
@@ -72,6 +79,7 @@ public class ShoppingApp {
     }
 
     public static void read() {
+        logger.info("Read item");
         System.out.print("Enter id: ");
         long id = scanner.nextLong();
         scanner.nextLine();
@@ -79,11 +87,13 @@ public class ShoppingApp {
             ShoppingItem item = service.read(id);
             System.out.println(item);
         } catch (ItemNotFoundException e) {
+            logger.error("Item not found", e);
             System.out.println("Item not found");
         }
     }
 
     public static void printQuantityMenu() {
+        logger.info("Print quantity menu");
         System.out.println("Enter quantity increase or decrease: ");
         System.out.println("1. Increase");
         System.out.println("2. Decrease");
@@ -91,6 +101,7 @@ public class ShoppingApp {
 
 
     public static void update() {
+        logger.info("Update item");
         System.out.print("Enter id: ");
         long id = scanner.nextLong();
         scanner.nextLine();
@@ -111,18 +122,21 @@ public class ShoppingApp {
             }
             service.update(item);
         } catch (ItemNotFoundException e) {
+            logger.error("Item not found", e);
             System.out.println("Item not found");
         }
 
     }
 
     public static void delete() {
+        logger.info("Delete item");
         System.out.print("Enter id: ");
         long id = scanner.nextLong();
         scanner.nextLine();
         try {
             service.delete(id);
         } catch (ItemNotFoundException e) {
+            logger.error("Item not found", e);
             System.out.println("Item not found");
         }
     }

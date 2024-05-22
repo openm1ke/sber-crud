@@ -20,7 +20,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -171,7 +171,7 @@
       <workItem from="1716307886363" duration="1543000" />
       <workItem from="1716309552087" duration="32000" />
       <workItem from="1716309617254" duration="1685000" />
-      <workItem from="1716367074360" duration="8442000" />
+      <workItem from="1716367074360" duration="9666000" />
     </task>
     <servers />
   </component>

@@ -13,10 +13,11 @@
 - Java 11
 - Maven
 - JavaDoc
+- log4j
 
 Сборка:
 <code> mvn install </code>
 
-Запуск: <code>java -jar ./target/sber-crud-1.0-SNAPSHOT.jar </code>
+Запуск: <code>java -jar ./target/sber-crud-1.0-SNAPSHOT-jar-with-dependencies.jar </code>
 
 Спасибо за внимание!

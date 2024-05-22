@@ -45,6 +45,7 @@
     "JUnit.ShoppingItemTest.testHashCode.executor": "Run",
     "Maven.sber-crud [clean].executor": "Run",
     "Maven.sber-crud [install].executor": "Run",
+    "Maven.sber-crud [package].executor": "Run",
     "Maven.sber-crud [test].executor": "Run",
     "Maven.untitled [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -171,7 +172,7 @@
       <workItem from="1716307886363" duration="1543000" />
       <workItem from="1716309552087" duration="32000" />
       <workItem from="1716309617254" duration="1685000" />
-      <workItem from="1716367074360" duration="9666000" />
+      <workItem from="1716367074360" duration="9956000" />
     </task>
     <servers />
   </component>

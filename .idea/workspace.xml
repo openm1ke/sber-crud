@@ -14,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -30,6 +30,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.ShoppingApp.executor": "Run",
     "JUnit.ItemIdGeneratorTest.executor": "Run",
     "JUnit.ShoppingItemServiceImplTest.create.executor": "Run",
     "JUnit.ShoppingItemServiceImplTest.createAndRead.executor": "Run",
@@ -48,7 +49,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/mnt/d/PROJECTS/IdeaProjects/SBER_CRUD/sber-crud",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
@@ -61,9 +62,9 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShoppingItemServiceImplTest.delete">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+  <component name="RunManager" selected="Application.ShoppingApp">
+    <configuration name="ShoppingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ShoppingApp" />
       <module name="sber-crud" />
       <extension name="coverage">
         <pattern>
@@ -141,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShoppingApp" />
         <item itemvalue="JUnit.ShoppingItemServiceImplTest.delete" />
         <item itemvalue="JUnit.ShoppingItemServiceImplTest.update" />
         <item itemvalue="JUnit.ShoppingItemServiceImplTest.createAndReadException" />
         <item itemvalue="JUnit.ShoppingItemServiceImplTest.createAndRead" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +168,7 @@
       <workItem from="1716307886363" duration="1543000" />
       <workItem from="1716309552087" duration="32000" />
       <workItem from="1716309617254" duration="1685000" />
-      <workItem from="1716367074360" duration="3673000" />
+      <workItem from="1716367074360" duration="5862000" />
     </task>
     <servers />
   </component>

@@ -47,4 +47,8 @@ public class ShoppingItemServiceImpl implements ShoppingItemService {
     public int size() {
         return items.size();
     }
+
+    public List<ShoppingItem> list() {
+        return items;
+    }
 }
